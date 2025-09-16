@@ -31,7 +31,7 @@ public class BritishSpokenTime {
             hour = Integer.parseInt(parts[0]);
             min = Integer.parseInt(parts[1]);
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid numbers in time.");
+            throw new IllegalArgumentException("Invalid numbers in time.Please check the input time.");
         }
         if (hour < 0 || hour > 23 || min < 0 || min > 59) {
             throw new IllegalArgumentException("Time out of range (00:00 to 23:59).");
